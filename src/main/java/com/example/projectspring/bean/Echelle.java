@@ -1,4 +1,4 @@
-package projet.mission.project1.bean;
+package com.example.projectspring.bean;
 
 import jakarta.persistence.*;
 import projet.mission.project1.bean.Grade;
