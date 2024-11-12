@@ -1,13 +1,11 @@
 package projet.mission.project1.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -18,6 +16,11 @@ import java.util.Date;
 public class ChargeMission {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private double montant;
-    private LocalDate date;
+    private String libelle;
+    private String description;
+    private String code;
+    private BigDecimal montant;
+    private LocalDate dateChargeMission;
+    @ManyToOne
+    private Mission mission;
 }

@@ -1,6 +1,6 @@
 package projet.mission.project1.bean;
 
-import projet.mission.project1.enums.Etat;
+import projet.mission.project1.enums.EtatMission;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +8,7 @@ import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -29,13 +30,13 @@ public class Mission {
     private LocalDate dateFin;
 
     @Enumerated(EnumType.STRING)
-    private Etat etat;
+    private EtatMission etatMission;
 
     @ManyToOne
-    private TypeMission type;
+    private TypeMission typeMission;
 
-    @OneToOne
-    private ChargeMission charge;
+    @OneToMany(mappedBy = "chargeMission")
+    private List<ChargeMission> chargeMissions;
 
     // Constructors, Getters, and Setters
 }

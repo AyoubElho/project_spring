@@ -16,6 +16,8 @@ public class TypeMission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String type; // e.g., Research, Development, Testing, etc.
+    private String libelle;
+    private String description;
+    private String code;
 
 }
