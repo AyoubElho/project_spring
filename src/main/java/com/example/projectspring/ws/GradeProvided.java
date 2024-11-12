@@ -1,10 +1,10 @@
-package projet.mission.project1.ws;
+package com.example.projectspring.ws;
 
+import com.example.projectspring.bean.Grade;
+import com.example.projectspring.service.GradeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import projet.mission.project1.bean.Grade;
-import projet.mission.project1.service.GradeService;
 
 import java.util.List;
 

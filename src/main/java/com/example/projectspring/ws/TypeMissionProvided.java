@@ -1,4 +1,4 @@
-package com.example.projectspring.controller;
+package com.example.projectspring.ws;
 
 import com.example.projectspring.bean.TypeMission;
 import com.example.projectspring.service.TypeMissionService;
