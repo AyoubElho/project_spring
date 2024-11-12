@@ -1,3 +1,6 @@
+package com.example.projectspring.service;
+
+import com.example.projectspring.bean.TypeMission;
 import com.example.projectspring.dao.TypeMissionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

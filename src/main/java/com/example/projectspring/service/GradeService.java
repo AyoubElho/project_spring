@@ -1,9 +1,9 @@
-package projet.mission.project1.service;
+package com.example.projectspring.service;
 
+import com.example.projectspring.bean.Grade;
+import com.example.projectspring.dao.GradeDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import projet.mission.project1.bean.Grade;
-import projet.mission.project1.dao.GradeDao;
 
 import java.util.List;
 

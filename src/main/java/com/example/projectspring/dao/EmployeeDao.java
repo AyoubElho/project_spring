@@ -1,9 +1,8 @@
-package projet.mission.project1.dao;
+package com.example.projectspring.dao;
 
+import com.example.projectspring.bean.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import projet.mission.project1.bean.Employee;
-import projet.mission.project1.bean.Grade;
 
 import java.util.List;
 

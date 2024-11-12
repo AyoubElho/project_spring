@@ -1,10 +1,10 @@
-package projet.mission.project1.ws;
+package com.example.projectspring.ws;
 
+import com.example.projectspring.bean.Echelle;
+import com.example.projectspring.service.EchelleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import projet.mission.project1.bean.Echelle;
-import projet.mission.project1.service.EchelleService;
 
 import java.util.List;
 
