@@ -1,7 +1,6 @@
 package com.example.projectspring.bean;
 
 import jakarta.persistence.*;
-import projet.mission.project1.bean.Grade;
 
 @Entity
 public class Echelle {
